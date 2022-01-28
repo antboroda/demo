@@ -24,6 +24,9 @@ pipeline {
                 }
             }
         }
+        agent { 
+                label 'linux'
+            }
         stage('Deliver') { 
             steps {
                 echo '> Deploying the application ...'
